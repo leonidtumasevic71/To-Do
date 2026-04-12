@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 15% 55% 10% 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 10%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.settings-area {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+  background-color: darkgray;
+}
+
+.settings-area:hover {
+  background-color: rgb(145, 145, 145);
+}
+
+.add-area { 
+  grid-column: 2 / 6;
+  grid-row: 6 / 7;
+  background-color: aquamarine;
+}
+
+.add-area:hover {
+  background-color: rgb(104, 203, 170);
+}
+
+.check-bar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  background-color: rgb(91, 143, 14);
+}
+
+.topic-bar {
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+  background-color: blue;
+}
+
+.tasks {
+  grid-column: 3 / 4;
+  grid-row: 1 / 6;
+  background-color: crimson;
+}
+
+.time {
+  grid-column: 4 / 5;
+  grid-row: 1 / 6;
+  background-color: rgb(3, 116, 61);
+}
+
+.date {
+  grid-column: 5 / 6;
+  grid-row: 1 / 6;
+  background-color: rgb(239, 117, 24);
+}
+
+.settings-area,
+.add-area,
+.check-bar,
+.date,
+.tasks,
+.time,
+.topic-bar {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-bar,
+.date,
+.tasks,
+.time,
+.topic-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  
+  /* Многострочный текст с обрывом */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  
+  /* Для внутреннего текста */
+  text-align: center;
+}
+
+/* Обёртка для текста внутри ячейки */
+.cell-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
