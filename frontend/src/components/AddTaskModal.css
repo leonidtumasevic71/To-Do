@@ -1,37 +1,30 @@
-/* Затемнённый фон */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
 }
 
-/* Белая карточка */
 .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    min-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 75%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Кнопка закрытия (крестик) */
-.modal-close {
-    float: right;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+.close-btn {
+    
 }
 
-/* Отступ между кнопками */
-.modal-footer {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
