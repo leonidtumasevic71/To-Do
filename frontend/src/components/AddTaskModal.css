@@ -14,17 +14,58 @@
 }
 
 .modal-content {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 8px;
   width: 75%;
-  height: 10%;
+  min-height: 600px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  gap: 10px;
 }
 
 .close-btn {
-    
+  position: absolute;
+
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  width: 47%;
+  height: 10%;
+
+  bottom: 15px;
+  right: 15px;
+}
+
+.add-btn {
+    position: absolute;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    width: 47%;
+    height: 10%;
+
+    bottom: 15px;
+    left: 15px;
+}
+
+.modal-actions {
+
 }
 

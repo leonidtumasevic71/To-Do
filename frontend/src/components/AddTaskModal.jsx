@@ -7,7 +7,10 @@ function AddTaskModal({isOpen, onClose, children})
     return (
         <div className='modal-overlay' onClick={onClose}>
             <div className='modal-content' onClick={(e) => e.stopPropagation()}>
-                <button className="close-btn" onClick={onClose}>✕</button>
+                <div className='bottom-modal'>
+                    <button className='close-btn' onClick={onClose}>canel</button>
+                    <button className='add-btn'>add</button>
+                </div>
                 {children}
             </div>
         </div>

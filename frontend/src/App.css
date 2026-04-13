@@ -68,8 +68,9 @@
 .date,
 .tasks,
 .time,
-.topic-bar {
-  border: 1px solid white;
+.topic-bar,
+.cell {
+  outline: 1px solid #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,8 +94,6 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  border: 1px solid #ddd;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   
   /* Многострочный текст с обрывом */
   overflow: hidden;
